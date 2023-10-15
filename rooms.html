@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>bonz.ai - AI Driven Eko Living</title>
+  </head>
+  <body>
+    <header class="header">
+      <section class="header__container">
+        <img
+          class="header__logo"
+          src="./assets/img/logo/bonz.ai-logo-color-landscape.png"
+          alt=""
+        />
+        <nav class="navbar">
+          <ul class="navbar__list">
+            <li class="navbar__list-item">
+              <a class="navbar__list-link" href="index.html">Hem</a>
+            </li>
+            <li class="navbar__list-item">
+              <a
+                class="navbar__list-link navbar__list-link--active"
+                href="rooms.html"
+                >Våra bostäder</a
+              >
+            </li>
+            <li class="navbar__list-item">
+              <a class="navbar__list-link" href="about.html">Om bonz.ai</a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+    <section class="splasher splasher--bg-bed-view">
+      <div class="splasher__box splasher__box--rooms">
+        <h1>Våra bostäder</h1>
+        <p>Upptäck våra unika boenden.</p>
+      </div>
+    </section>
+    <main class="main__container">
+      <h2><span>Filtrera</span></h2>
+      <form class="filter">
+        <div>
+          <label for="type">Typ av bostad:</label><br />
+          <select id="type">
+            <option value="" disabled selected>Välj en bostadstyp</option>
+            <option value="">Villa</option>
+            <option value="">Mindre stuga</option>
+            <option value="">Bungalow</option>
+          </select>
+        </div>
+        <div>
+          <label for="guests">Antal gäster:</label><br />
+          <select id="guests">
+            <option value="Välj antal gäster" disabled selected>
+              Välj antal gäster
+            </option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+          </select>
+        </div>
+        <div class="filter__size">
+          <label>Storlek (kvm):</label><br />
+          <div class="size-flex">
+            <input type="text" value="0" />
+            <input type="text" value="1000" />
+          </div>
+        </div>
+        <div>
+          <label for="price">Högsta pris:</label><br />
+          <input
+            type="range"
+            min="1000"
+            max="10000"
+            value="10000"
+            id="price"
+            name="price"
+            list="markers"
+          />
+
+          <datalist id="markers">
+            <option value="1000" label="1000kr"></option>
+            <option value="3250"></option>
+            <option value="5500"></option>
+            <option value="7750"></option>
+            <option value="10000" label="10000kr"></option>
+          </datalist>
+        </div>
+      </form>
+      <section>
+        <h2><span>Våra bostäder</span></h2>
+        <div class="rooms-container">
+          <article class="room">
+            <header class="room__img">
+              <img src="./assets/img/photos/06-day.jpg" alt="" />
+            </header>
+            <div class="room-content">
+              <div class="room-description">
+                <h3>Stugan vid skogen</h3>
+                <p>En charmig och mer avskild stuga nära naturen.</p>
+              </div>
+              <div class="room-cta">
+                <a href="room.html" class="button button--shadow"
+                  >Läs mer om bostaden</a
+                >
+              </div>
+            </div>
+          </article>
+          <article class="room">
+            <header class="room__img">
+              <img src="./assets/img/photos/03-day.jpg" alt="" />
+            </header>
+            <div class="room-content">
+              <div class="room-description">
+                <h3>Lilla paradiset</h3>
+                <p>
+                  En mindre och intim bostad där du kan koppla av och njuta av
+                  en lugn vistelse.
+                </p>
+              </div>
+              <div class="room-cta">
+                <a href="room.html" class="button button--shadow"
+                  >Läs mer om bostaden</a
+                >
+              </div>
+            </div>
+          </article>
+          <article class="room">
+            <header class="room__img">
+              <img src="./assets/img/photos/05-day.jpg" alt="" />
+            </header>
+            <div class="room-content">
+              <div class="room-description">
+                <h3>Björnborgen</h3>
+                <p>
+                  En intim bostad, perfekt för en fridfull och avslappnad
+                  vistelse i naturen.
+                </p>
+              </div>
+              <div class="room-cta">
+                <a href="room.html" class="button button--shadow"
+                  >Läs mer om bostaden</a
+                >
+              </div>
+            </div>
+          </article>
+          <article class="room">
+            <header class="room__img">
+              <img src="./assets/img/photos/06-day.jpg" alt="" />
+            </header>
+            <div class="room-content">
+              <div class="room-description">
+                <h3>Stugan vid skogen</h3>
+                <p>En charmig och mer avskild stuga nära naturen.</p>
+              </div>
+              <div class="room-cta">
+                <a href="room.html" class="button button--shadow"
+                  >Läs mer om bostaden</a
+                >
+              </div>
+            </div>
+          </article>
+          <article class="room">
+            <header class="room__img">
+              <img src="./assets/img/photos/03-day.jpg" alt="" />
+            </header>
+            <div class="room-content">
+              <div class="room-description">
+                <h3>Lilla paradiset</h3>
+                <p>
+                  En mindre och intim bostad där du kan koppla av och njuta av
+                  en lugn vistelse.
+                </p>
+              </div>
+              <div class="room-cta">
+                <a href="room.html" class="button button--shadow"
+                  >Läs mer om bostaden</a
+                >
+              </div>
+            </div>
+          </article>
+          <article class="room">
+            <header class="room__img">
+              <img src="./assets/img/photos/05-day.jpg" alt="" />
+            </header>
+            <div class="room-content">
+              <div class="room-description">
+                <h3>Björnborgen</h3>
+                <p>
+                  En intim bostad, perfekt för en fridfull och avslappnad
+                  vistelse i naturen.
+                </p>
+              </div>
+              <div class="room-cta">
+                <a href="room.html" class="button button--shadow"
+                  >Läs mer om bostaden</a
+                >
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <section class="footer__container">
+        <img
+          class="footer__img--portrait"
+          src="./assets/img/logo/bonz.ai-logo-color-portrait-full.png"
+          alt=""
+        />
+        <img
+          class="footer__img--landscape"
+          src="./assets/img/logo/bonz.ai-logo-color-landscape.png"
+          alt=""
+        />
+        <section class="footer__menus">
+          <nav>
+            <h4>Hitta rätt</h4>
+            <ul>
+              <li><a class="active" href="index.html">Hem</a></li>
+              <li><a href="rooms.html">Våra bostädar</a></li>
+              <li><a href="about.html">Om bonz.ai</a></li>
+            </ul>
+          </nav>
+          <nav>
+            <h4>Våra bostäder</h4>
+            <ul>
+              <li><a href="room.html">Mästarvillan</a></li>
+              <li><a href="room.html">Stugan vid skogen</a></li>
+              <li><a href="room.html">Lilla paradiset</a></li>
+              <li><a href="room.html">Björnborgen</a></li>
+            </ul>
+          </nav>
+        </section>
+      </section>
+    </footer>
+  </body>
+</html>
